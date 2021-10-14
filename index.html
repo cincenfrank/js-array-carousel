@@ -5,6 +5,7 @@
     <title>Multi Array Carousel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +14,99 @@
 <body>
     <header></header>
     <main>
+        <div class="container stacked-container">
+            <div class="row">
+                <div class="col-10 p-0">
+                    <div class="ratio ratio-21x9">
+                        <img class="selected-image" src="img/01.jpg" alt="">
+                        <img class="selected-image active" src="img/02.jpg" alt="">
+                        <img class="selected-image" src="img/03.jpg" alt="">
+                        <img class="selected-image" src="img/04.jpg" alt="">
+                        <img class="selected-image" src="img/05.jpg" alt="">
+                        <div class="selected-image-description">
+                            <h2 class="px-3 my-0 fs-4">Svizzera</h2>
+                            <p class="px-3 mb-4 fs-5">Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col p-0 position-relative">
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100 thumb" src="img/01.jpg" alt="">
+                        <div class="thumb-border">
+                        </div>
+                        <div class="thumb-overlay"></div>
 
+                    </div>
+                    <div class="ratio ratio-21x9 active">
+                        <img class="w-100 thumb" src="img/02.jpg" alt="">
+                        <div class="thumb-border">
+                        </div>
+                        <div class="thumb-overlay"></div>
+                    </div>
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100 thumb" src="img/03.jpg" alt="">
+                        <div class="thumb-border">
+                        </div>
+                        <div class="thumb-overlay"></div>
+                    </div>
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100 thumb" src="img/04.jpg" alt="">
+                        <div class="thumb-border">
+                        </div>
+                        <div class="thumb-overlay"></div>
+                    </div>
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100 thumb" src="img/05.jpg" alt="">
+                        <div class="thumb-border">
+                        </div>
+                        <div class="thumb-overlay"></div>
+                    </div>
+                    <div class="up-arrow carousel-controller fa fa-chevron-circle-up">
+                    </div>
+                    <div class="down-arrow carousel-controller fa fa-chevron-circle-down">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-10 p-0">
+                    <div class="ratio ratio-21x9">
+                        <img class="selected-image" src="img/01.jpg" alt="">
+                        <div class="d-flex flex-column justify-content-end align-items-end">
+                            <h2 class=" px-3 my-0">Svizzera</h2>
+                            <p class="px-3 mb-4 fs-3">Lorem Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col p-0 position-relative">
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100" src="img/01.jpg" alt="">
+                    </div>
+                    <div class="ratio ratio-21x9 selected">
+                        <img class="w-100" src="img/02.jpg" alt="">
+                    </div>
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100" src="img/03.jpg" alt="">
+                    </div>
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100" src="img/04.jpg" alt="">
+                    </div>
+                    <div class="ratio ratio-21x9">
+                        <img class="w-100" src="img/05.jpg" alt="">
+                    </div>
+                    <div
+                        class="up-arrow carousel-controller fa fa-chevron-up fs-3 rounded-circle bg-light position-absolute top-0 start-50 translate-middle-x">
+                    </div>
+                    <div
+                        class="down-arrow carousel-controller fa fa-chevron-down fs-3  rounded-circle bg-light position-absolute bottom-0 start-50 translate-middle-x">
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
