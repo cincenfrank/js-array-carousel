@@ -8,19 +8,23 @@ img {
   filter: opacity(0);
 
   overflow: hidden;
+  transition: filter 1s 0.3s;
 }
 .stacked-container .main-image > * {
   position: absolute;
 }
 .stacked-container .main-image.active {
   filter: opacity(1);
+  transition: filter 1s;
 }
 .stacked-container .main-image .description {
   filter: opacity(0);
   z-index: 2;
+  transition: filter 0.5s;
 }
 .stacked-container .main-image.active .description {
   filter: opacity(1);
+  transition: filter 0.5s 1s;
 }
 
 .stacked-container .thumb-border {
